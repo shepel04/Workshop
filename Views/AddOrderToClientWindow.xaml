@@ -1,0 +1,28 @@
+﻿<Window x:Class="Workshop.Views.AddOrderToClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Workshop.Views"
+        mc:Ignorable="d"
+        Title="Створити замовлення" Height="250" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            
+            <TextBlock Text="Клієнт:"/>
+            <ComboBox x:Name="ClientComboBox" IsEditable="True" DropDownOpened="ClientComboBox_DropDownOpened"/>
+
+
+            <TextBlock Text="Опис:"/>
+            <TextBox x:Name="DescriptionTextBox"/>
+
+            <TextBlock Text="Ціна:"/>
+            <TextBox x:Name="PriceTextBox"/>
+
+            <TextBlock Text="Статус:"/>
+            <TextBox x:Name="StatusTextBox"/>
+
+            <Button Margin="0,30,0,0" Content="Add Order" Click="AddOrderButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

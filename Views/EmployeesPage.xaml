@@ -1,0 +1,29 @@
+﻿<Page x:Class="Workshop.Views.EmployeesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Workshop.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EmployeesPage" Foreground="White">
+
+    <Grid>
+
+        <Label Content="Співробітники" HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="262" FontSize="22" Foreground="White" FontFamily="Arial Black" FontWeight="Bold" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Margin="15">
+            <TextBox x:Name="EmployeeSearchTextBox" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" Height="20" Margin="0" HorizontalAlignment="Right" Width="100"></TextBox>
+            <Button x:Name="FindEmployeeButton" Grid.Column="2" Content="Пошук" HorizontalAlignment="Center" Height="20" Margin="10,0,0,0" Grid.Row="0" VerticalAlignment="Top" Width="60" Click="FindEmployeeButton_Click"/>
+            <Button x:Name="RefreshEmployeeButton" Grid.Column="2" Content="Оновити" HorizontalAlignment="Center" Height="20" Margin="10,0,0,0" Grid.Row="0" VerticalAlignment="Top" Width="60" Click="RefreshEmployeeButton_Click"/>
+        </StackPanel>
+
+        <DataGrid x:Name="EmployeesDataGrid" Grid.Column="0" Margin="10,63,10,136" Width="Auto" AutoGenerateColumns="True" IsSynchronizedWithCurrentItem="False" SelectionChanged="EmployeesDataGrid_SelectionChanged" Foreground="Black" BorderBrush="Black"/>
+
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="15">
+            <Button x:Name="AddEmployeeButton" Content="+" HorizontalAlignment="Left" Height="45" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="45" FontFamily="Arial Black" FontSize="24" Click="AddEmployeeButton_Click"/>
+            <Button x:Name="DeleteEmployeeButton" Content="Видалити" HorizontalAlignment="Left" Height="45" VerticalAlignment="Bottom" Width="66" Click="DeleteEmployeeButton_Click" Margin="10,0,0,0"/>
+        </StackPanel>
+
+    </Grid>
+</Page>

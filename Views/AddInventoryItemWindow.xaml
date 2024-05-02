@@ -1,0 +1,24 @@
+﻿<Window x:Class="Workshop.Views.AddInventoryItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Workshop.Views"
+        mc:Ignorable="d"
+        Title="Додати предмет інвентаря" Height="267" Width="252">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Назва:"/>
+            <TextBox x:Name="NameTextBox"/>
+            <TextBlock Text="Опис:"/>
+            <TextBox x:Name="DescriptionTextBox"/>
+            <TextBlock Text="Ціна:"/>
+            <TextBox x:Name="PriceTextBox"/>
+            <TextBlock Text="Категорія:"/>
+            <TextBox x:Name="CategoryTextBox"/>
+            <TextBlock Text="Кількість в наявності:"/>
+            <TextBox x:Name="QuantityInStockTextBox"/>
+            <Button Content="Додати" Click="AddButton_Click" HorizontalAlignment="Center" Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>

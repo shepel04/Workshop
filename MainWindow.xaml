@@ -1,0 +1,29 @@
+﻿<Window x:Class="Workshop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Workshop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280"
+        MinWidth="1280" MinHeight="720"
+        Background="#282E33">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="0,10,0,10" Orientation="Vertical">
+            <RadioButton x:Name="OrdersTab" Content="Замовлення" GroupName="TabsGroup" Checked="OrdersPage_Checked" Style="{StaticResource CustomRadioButtonStyle}"/>
+            <RadioButton x:Name="ClientsTab" Content="Клієнти" GroupName="TabsGroup" Checked="ClientsPage_Checked" Style="{StaticResource CustomRadioButtonStyle}"/>
+            <RadioButton x:Name="EmployeesTab" Content="Співробітники" GroupName="TabsGroup" Checked="EmployeesPage_Checked" Style="{StaticResource CustomRadioButtonStyle}"/>
+            <RadioButton x:Name="StprageTab" Content="Склад" GroupName="TabsGroup" Checked="StoragePage_Checked" Style="{StaticResource CustomRadioButtonStyle}"/>
+            <!--<RadioButton x:Name="FinanceTab" Content="Фінанси" GroupName="TabsGroup" Checked="FinancePage_Checked" Style="{StaticResource CustomRadioButtonStyle}"/>-->
+            <RadioButton x:Name="InventoryTab" Content="Інвентар" GroupName="TabsGroup" Checked="InventoryPage_Checked" Style="{StaticResource CustomRadioButtonStyle}"/>
+            <RadioButton x:Name="ServiceLogTab" Content="Журнал обслуговування" GroupName="TabsGroup" Checked="ServiceLogPage_Checked" Style="{StaticResource CustomRadioButtonStyle}"/>
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
