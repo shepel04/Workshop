@@ -16,5 +16,5 @@ D:\Projects\Workshop\App.xaml
 212-166140145
 MainWindow.xaml;Views\AddClientWindow.xaml;Views\AddEmployeeWindow.xaml;Views\AddInventoryItemWindow.xaml;Views\AddOrderToClientWindow.xaml;Views\AddOrderWindow.xaml;Views\AddToStorageWindow.xaml;Views\ClientOrdersWindow.xaml;Views\ClientsPage.xaml;Views\EmployeesPage.xaml;Views\FinancePage.xaml;Views\InventoryPage.xaml;Views\OrdersPage.xaml;Views\ServiceLogPage.xaml;Views\ServicesPage.xaml;Views\StoragePage.xaml;
 
-False
+True
 

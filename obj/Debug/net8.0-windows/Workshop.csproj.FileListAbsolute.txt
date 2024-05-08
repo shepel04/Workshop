@@ -132,3 +132,4 @@ D:\Projects\Workshop\obj\Debug\net8.0-windows\Views\AddClientWindow.g.cs
 D:\Projects\Workshop\obj\Debug\net8.0-windows\Views\AddClientWindow.baml
 D:\Projects\Workshop\obj\Debug\net8.0-windows\Views\AddToStorageWindow.g.cs
 D:\Projects\Workshop\obj\Debug\net8.0-windows\Views\AddToStorageWindow.baml
+D:\Projects\Workshop\obj\Debug\net8.0-windows\Workshop.sourcelink.json

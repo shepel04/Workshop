@@ -106,16 +106,16 @@ namespace Workshop.Views
 
                 dbContext.serviceLogs.Add(serviceLog);
 
-                 
-                
-
-                var financeRecord = new Finance
+               
+                var financeEntry = new Finance
                 {
-                    OrderId = order.Id,
-                    Amount = orderDetail.UnitPrice,
+                    OrderId = orderDetail.OrderId,
+                    Amount = orderDetail.UnitPrice  
                 };
 
-                dbContext.finances.Add(financeRecord);
+                dbContext.finances.Add(financeEntry);
+                
+
                 dbContext.orders.Remove(order);
 
                 try
